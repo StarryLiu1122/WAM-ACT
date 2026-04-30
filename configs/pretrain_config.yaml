@@ -1,0 +1,57 @@
+# WAM-ACT Pretrain Configuration
+# 预训练阶段配置
+
+model:
+  image_size: 256
+  latent_dim: 16
+  vae_hidden_dims: [128, 256, 512, 1024]
+  transformer_dim: 768
+  num_layers: 12
+  num_heads: 12
+  mlp_ratio: 4.0
+  max_seq_len: 4096
+  action_dim: 7
+  chunk_size: 16
+  history_len: 4
+  prediction_stride: 4
+  num_diffusion_steps: 1000
+  num_flow_steps: 50
+  num_views: 1
+
+data:
+  data_dir: "./data/robot"
+  batch_size: 32
+  num_workers: 4
+  history_len: 4
+  chunk_size: 16
+  image_size: 256
+  action_dim: 7
+  num_views: 1
+  use_augmentation: true
+  color_jitter: [0.4, 0.4, 0.4, 0.1]
+  action_noise_scale: 0.01
+
+train:
+  pretrain_epochs: 100
+  pretrain_lr: 0.0001
+  pretrain_batch_size: 32
+  finetune_epochs: 50
+  finetune_lr: 0.00001
+  finetune_batch_size: 16
+  weight_decay: 0.01
+  grad_clip: 1.0
+  warmup_ratio: 0.1
+  device: "cuda"
+  use_amp: true
+  seed: 42
+  output_dir: "./outputs/pretrain"
+  log_every: 100
+  save_every: 1
+  pretrained_path: null
+  freeze_encoder: true
+
+eval:
+  num_eval_batches: 10
+  rollout_length: 8
+  num_eval_episodes: 10
+  render: false
