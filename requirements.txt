@@ -1,0 +1,28 @@
+# WAM-ACT Requirements
+# 核心依赖
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+
+# 数据与配置
+pyyaml>=6.0
+pillow>=9.5.0
+
+# 训练与日志
+tensorboard>=2.13.0
+wandb>=0.15.0
+
+# 评估指标
+scikit-image>=0.21.0
+lpips>=0.1.4
+
+# 可选: 多模态处理
+transformers>=4.30.0
+sentencepiece>=0.1.99
+
+# 可选: 分布式训练
+accelerate>=0.20.0
+
+# 开发工具
+pytest>=7.3.0
+black>=23.3.0
