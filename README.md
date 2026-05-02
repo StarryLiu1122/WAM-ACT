@@ -1,10 +1,10 @@
-# SPARK: Sparse Prediction Action-world netwoRk with KV-cache
+# WAM-ACT: World-Action Model with Adaptive Causal Transformer
 
 基于图像生成的世界动作模型
 
 ## 项目概述
 
-SPARK是一个创新的世界动作模型，通过以下两个阶段进行训练：
+WAM-ACT是一个创新的世界动作模型，通过以下两个阶段进行训练：
 
 1. **预训练阶段**: 基于当前图像预测下一帧图像，学习世界动态模型
 2. **微调阶段**: 同步预测下一帧图像和Action Chunk，学习动作-视觉耦合策略
@@ -34,7 +34,7 @@ SPARK是一个创新的世界动作模型，通过以下两个阶段进行训练
 ## 项目结构
 
 ```
-spark/
+wam_act/
 ├── models/
 │   ├── wam_act.py              # 主模型架构
 │   ├── adaptive_transformer.py # 自适应因果Transformer
