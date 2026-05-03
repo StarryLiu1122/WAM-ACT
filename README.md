@@ -187,10 +187,14 @@ rollout = world_eval.evaluate_multi_step_rollout(val_loader, rollout_length=8)
 - 微调: Action Chunk $\hat{A}_{t:t+K}$ + 未来帧Latent ${\hat{z}_{t+k}}_{k=1}^{K}$
 
 ### 损失函数
-- **预训练**: 
-  $$\mathcal{L}_{pre} = \mathbb{E}[\|\hat{z}_{t+1} - z_{t+1}\|^2]$$
-- **微调**: 
-  $$\mathcal{L}_{ft} = \mathcal{L}_{action} + \lambda \mathcal{L}_{future} + \mu \mathcal{L}_{consistency}$$
+
+- **预训练**:
+
+$$\mathcal{L}_{pre} = \mathbb{E} \left[ \| \hat{z}_{t+1} - z_{t+1} \|^2 \right]$$
+
+- **微调**:
+
+$$\mathcal{L}_{ft} = \mathcal{L}_{action} + \lambda \mathcal{L}_{future} + \mu \mathcal{L}_{consistency}$$
 
 ## 参考工作
 
