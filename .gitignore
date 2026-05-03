@@ -54,6 +54,9 @@ wandb/
 # data/
 datasets/
 
+examples/
+docs/
+
 # Environment
 .env
 .venv

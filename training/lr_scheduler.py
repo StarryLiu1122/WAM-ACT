@@ -2,9 +2,6 @@
 Learning Rate Scheduler
 学习率调度器
 
-参考:
-- Cosine Annealing with Warmup (HuggingFace)
-- Diffusion Policy: 线性warmup + cosine decay
 """
 
 import math

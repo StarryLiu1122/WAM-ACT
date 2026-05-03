@@ -60,7 +60,6 @@ def set_seed(seed: int):
 
 
 def main():
-    """主函数"""
     args = parse_args()
 
     # 加载配置

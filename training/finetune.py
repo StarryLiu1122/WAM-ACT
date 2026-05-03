@@ -8,10 +8,6 @@ Finetune Trainer
 - 预测稀疏未来帧 (保持世界模型能力)
 - 动作-视觉一致性约束
 
-参考:
-- MOTUS (Bi et al., 2025): 流匹配VLA微调
-- CogACT (Zhao et al., 2025): DiT动作微调
-- GigaWorld-Policy (2026): 稀疏帧监督
 """
 
 import torch

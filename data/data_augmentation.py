@@ -2,10 +2,6 @@
 Data Augmentation
 数据增强模块
 
-参考:
-- Diffusion Policy: 图像增强策略
-- GigaWorld-Policy: 多视角一致性增强
-- MOTUS: 时间维度增强
 """
 
 import torch
@@ -173,7 +169,6 @@ class MultiViewAugmentor:
     """
     多视角数据增强
 
-    参考GigaWorld-Policy:
     - 保持多视角几何一致性
     - 视角间颜色匹配
     """

@@ -7,9 +7,6 @@ Robot Dataset
 - HDF5 (自定义格式)
 - Zarr (大规模数据集)
 
-参考:
-- Open X-Embodiment: 大规模机器人数据集
-- GigaWorld-Policy: 多视角数据加载
 """
 
 import torch
