@@ -51,7 +51,7 @@ runs/
 wandb/
 
 # Data
-data/
+# data/
 datasets/
 
 # Environment

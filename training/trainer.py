@@ -2,9 +2,6 @@
 Base Trainer
 通用训练器基类
 
-参考:
-- PyTorch Lightning: 训练流程抽象
-- HuggingFace Trainer: 分布式训练支持
 """
 
 import torch
@@ -89,8 +86,6 @@ class BaseTrainer:
     def train_epoch(self) -> Dict[str, float]:
         """
         训练一个epoch
-
-        子类需要重写此方法
         """
         raise NotImplementedError
 
@@ -98,8 +93,6 @@ class BaseTrainer:
     def validate(self) -> Dict[str, float]:
         """
         验证
-
-        子类需要重写此方法
         """
         raise NotImplementedError
 
@@ -216,7 +209,9 @@ class DistributedTrainer(BaseTrainer):
             self.model = nn.DataParallel(self.model)
 
     def train_epoch(self) -> Dict[str, float]:
-        """分布式训练epoch"""
+        """
+        分布式训练epoch
+        """
         self.model.train()
 
         total_loss = 0.0
@@ -242,7 +237,5 @@ class DistributedTrainer(BaseTrainer):
     def compute_loss(self, batch: Dict[str, torch.Tensor]) -> torch.Tensor:
         """
         计算损失
-
-        子类需要重写此方法
         """
         raise NotImplementedError
