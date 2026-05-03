@@ -2,15 +2,6 @@
 Pretrain Trainer
 预训练阶段: 基于当前图像预测下一帧图像
 
-训练目标:
-- 学习世界动态模型
-- 理解视觉变化的因果规律
-- 建立视觉-时间关联
-
-参考:
-- Diffusion Forcing (Chen et al., 2024)
-- WorldGym (2025)
-- GigaWorld-Policy (2026)
 """
 
 import torch
