@@ -19,21 +19,13 @@ WAM-ACT是一个创新的世界动作模型，通过以下两个阶段进行训�
 - 每帧独立噪声调度，支持任意长度自回归rollout
 - 避免传统扩散模型的固定长度限制
 
-### 2. Action-Aware Token Routing
-- 动作Tokens通过可学习路由门控动态选择注意力头
-- 实现动作-视觉深度耦合
-
-### 3. Sparse Future Frame Prediction
+### 2. Sparse Future Frame Prediction
 - 仅预测稀疏关键帧(Δ步长)，减少冗余监督
 - 保留关键动态演化信息
 
-### 4. Bidirectional Consistency Loss
+### 3. Bidirectional Consistency Loss
 - 动作预测与未来帧预测互相约束
 - 动作Tokens关注当前观测，未来帧Tokens关注动作
-
-### 5. Streaming Inference with KV-Cache
-- 支持实时流式推理
-- 历史帧通过KV-Cache压缩，无需重复编码
 
 ## 项目结构
 
