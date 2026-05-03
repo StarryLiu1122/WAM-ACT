@@ -190,7 +190,7 @@ rollout = world_eval.evaluate_multi_step_rollout(val_loader, rollout_length=8)
 
 - **预训练**:
 
-$$\mathcal{L}_{pre} = \mathbb{E} \left[ \| \hat{z}_{t+1} - z_{t+1} \|^2 \right]$$
+$$\mathcal{L}_{pre} = \mathbb{E} \left[ || \hat{z}_{t+1} - z_{t+1} ||^2 \right]$$
 
 - **微调**:
 
