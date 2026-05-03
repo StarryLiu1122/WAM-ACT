@@ -183,7 +183,9 @@ rollout = world_eval.evaluate_multi_step_rollout(val_loader, rollout_length=8)
 - 历史帧序列 ${o_{t-H:t}}$
 
 ### 输出
+
 - 预训练: 下一帧Latent $\hat{z}_{t+1}$
+
 - 微调: Action Chunk $\hat{A}_{t:t+K}$ + 未来帧Latent ${\hat{z}_{t+k}}_{k=1}^{K}$
 
 ### 损失函数
