@@ -9,6 +9,10 @@ WAM-ACT是一个创新的世界动作模型，通过以下两个阶段进行训�
 1. **预训练阶段**: 基于当前图像预测下一帧图像，学习世界动态模型
 2. **微调阶段**: 同步预测下一帧图像和Action Chunk，学习动作-视觉耦合策略
 
+## 模型架构
+
+![WAM-ACT 模型架构](./assets/model_architecture.png)
+
 ## 核心创新
 
 ### 1. Diffusion Forcing 预训练
