@@ -54,8 +54,11 @@ wandb/
 # data/
 datasets/
 
+# others
 examples/
 docs/
+tests/
+visualizations/
 
 # Environment
 .env

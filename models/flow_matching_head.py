@@ -2,11 +2,6 @@
 Flow Matching Action Head
 核心创新: 使用Flow Matching替代传统扩散模型进行动作预测
 
-参考:
-- Flow Matching (Lipman et al., 2023): 直接学习向量场
-- MOTUS (Bi et al., 2025): 流匹配VLA
-- CogACT (Zhao et al., 2025): 基于DiT的动作预测
-
 创新点:
 1. 相比扩散模型，Flow Matching训练更稳定，推理步数更少
 2. 动作Token与视觉Token在Transformer中深度耦合

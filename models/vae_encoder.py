@@ -2,10 +2,6 @@
 VAE Encoder/Decoder
 视觉Latent空间编码器
 
-参考:
-- Stable Diffusion VAE: 将图像编码到Latent空间
-- Cosmos-Policy (NVIDIA, 2026): 视频模型的Latent表示
-- GigaWorld-Policy (2026): 多视角图像拼接编码
 """
 
 import torch
@@ -18,7 +14,7 @@ class VAEEncoder(nn.Module):
     """
     VAE编码器: 将RGB图像编码到Latent空间
 
-    支持多视角输入拼接 (参考GigaWorld-Policy的多视角Compose)
+    支持多视角输入拼接 
     """
 
     def __init__(

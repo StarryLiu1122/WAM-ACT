@@ -8,9 +8,6 @@ Policy Evaluator
 - 动作平滑度
 - 时间效率
 
-参考:
-- MOTUS (Bi et al., 2025): 流匹配策略评估
-- CogACT (Zhao et al., 2025): DiT策略评估
 """
 
 import torch

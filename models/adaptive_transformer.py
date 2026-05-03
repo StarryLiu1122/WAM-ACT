@@ -2,12 +2,6 @@
 Adaptive Causal Transformer (ACT)
 核心创新: 融合Diffusion Forcing + Flow Matching的多模态因果Transformer
 
-参考:
-- DiT (Peebles & Xie, 2023): 扩散Transformer
-- MOTUS (Bi et al., 2025): 流匹配Transformer
-- GigaWorld-Policy (2026): 共享Transformer + 模态特定编码
-- CogACT (Zhao et al., 2025): 基于DiT的动作预测
-
 创新点:
 1. 多模态Token统一处理 (指令/视觉/状态/动作/未来)
 2. AdaLN-Zero条件调制 (来自DiT)

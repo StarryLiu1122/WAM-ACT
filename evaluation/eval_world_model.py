@@ -8,9 +8,6 @@ World Model Evaluator
 - 动作条件预测精度
 - 因果一致性
 
-参考:
-- WorldGym (2025): 世界模型评估框架
-- Diffusion Forcing (Chen et al., 2024): 长期rollout评估
 """
 
 import torch

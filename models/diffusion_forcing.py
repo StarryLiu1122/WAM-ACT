@@ -2,11 +2,6 @@
 Diffusion Forcing Training Framework
 核心创新: 独立噪声调度 + 自回归扩散训练
 
-参考:
-- Diffusion Forcing (Chen et al., 2024): 每帧独立噪声，支持任意长度rollout
-- WorldGym (2025): 用于策略评估的扩散世界模型
-- GigaWorld-Policy (2026): 稀疏未来帧预测
-
 创新点:
 1. 每帧独立噪声水平，训练时随机采样
 2. 支持因果注意力掩码，实现流式推理
